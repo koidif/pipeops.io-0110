@@ -10,16 +10,16 @@ const { execSync } = require('child_process');
 const FILE_PATH = process.env.FILE_PATH || './temp'; // 运行文件夹，节点文件存放目录
 const projectPageURL = process.env.URL || '';        // 填写项目域名可开启自动访问保活，非标端口的前缀是http://
 const intervalInseconds = process.env.TIME || 120;   // 自动访问间隔时间（120秒）
-const UUID = process.env.UUID || '89c13786-25aa-4520-b2e7-12cd60fb5202';
+const UUID = process.env.UUID || '18958a9a-b0d6-4e3e-9777-4325c6a1a552';
 const ZJBL_SERVER = process.env.ZJBL_SERVER || 'nz.abc.cn';      // 哪吒3个变量不全不运行
 const ZJBL_PORT = process.env.ZJBL_PORT || '5555';              // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
 const ZJBL_KEY = process.env.ZJBL_KEY || '';                   // 哪吒客户端密钥
-const SDYM_DOMAIN = process.env.SDYM_DOMAIN || '';              // 固定隧道域名，留空即启用临时隧道
-const SDYM_AUTH = process.env.SDYM_AUTH || '';                 // 固定隧道json或token，留空即启用临时隧道
+const SDYM_DOMAIN = process.env.SDYM_DOMAIN || 'pipeops.io-0110.adftfjtdhdf1.ggff.net';              // 固定隧道域名，留空即启用临时隧道
+const SDYM_AUTH = process.env.SDYM_AUTH || 'eyJhIjoiZDIyNzJlYzc3NWYyZmEwNjQzMDUzNzdhNmFkMWEwM2IiLCJ0IjoiN2VhNjk0MTItODM3NS00MzljLThmOWQtZTJmYjdhMWZkYTZkIiwicyI6Ik16UmpZMkprTlRJdFlXTmlPUzAwTkRVeUxXRmlZbVl0WkRFNFl6ZzFZemRqWkdObSJ9';                 // 固定隧道json或token，留空即启用临时隧道
 const CFIP = process.env.CFIP || 'skk.moe';                   // 优选域名或优选ip
 const CFPORT = process.env.CFPORT || 443;                    // 节点端口
 const NAME = process.env.NAME || 'Vls';                     // 节点名称
-const ARGO_PORT = process.env.ARGO_PORT || 58080;           // Argo端口，使用固定隧道token需和cf后台设置的端口对应
+const ARGO_PORT = process.env.ARGO_PORT || 8001;           // Argo端口，使用固定隧道token需和cf后台设置的端口对应
 const PORT = process.env.SERVER_PORT || process.env.PORT || 33000; // 节点订阅端口，若无法订阅请手动改为分配的端口
 
 //创建运行文件夹
